@@ -1,0 +1,114 @@
+.Card {
+    display: flex;
+}
+
+.img__desk{
+    width: 50%;
+}
+
+.img__desk img {
+    border-radius: 9px 0 0 9px;
+}
+
+.img__mob{
+    display: none;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+    justify-content: space-between;
+    border-radius: 0 9px 9px 0;
+    width: 50%;
+}
+
+.category {
+    font-family: "Fraunces", serif;
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.name {
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.description {
+    color: hsl(228, 12%, 48%);
+    font-size: 0.8rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 1.25rem;
+    width: 91%;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.current {
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    font-family: "Fraunces", serif;
+}
+
+.previous {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.button {
+    background: hsl(158, 36%, 37%);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    border-radius: 9px;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.button:hover {
+    background: hsl(158, 42%, 18%);
+}
+
+@media screen and (max-width: 450px) {
+    .Card {
+        flex-direction: column;
+        max-width: 95%;
+    }
+
+    .img__desk {
+        display: none;
+    }
+
+    .img__mob {
+        display: flex;
+        width: 100%;
+        border-radius: 9px 9px 0 0;
+    }
+
+    .img__mob img {
+        border-radius: 9px 9px 0 0 ;
+    }
+    
+    .card__text {
+        width: 100%;
+        border-radius: 0 0 9px 9px;
+        height: 56vh;
+    }
+
+    .description {
+        width: 83%;
+    }
+}
