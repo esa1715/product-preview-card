@@ -1,3 +1,11 @@
+
+$background: hsl(30, 38%, 92%);
+$cardbackground: hsl(0, 0%, 100%);
+$primario: hsl(212, 21%, 14%);
+$secundario: hsl(228, 12%, 48%);
+$destaque: hsl(158, 36%, 37%);
+$hover: hsl(158, 42%, 18%);
+
 .Card {
     display: flex;
 }
@@ -17,8 +25,8 @@
 .card__text {
     display: flex;
     flex-direction: column;
-    background-color: hsl(0, 0%, 100%);
-    padding: 1.5rem;
+    background-color: $cardbackground;
+    padding: 2.5rem;
     justify-content: space-between;
     border-radius: 0 9px 9px 0;
     width: 50%;
@@ -26,7 +34,7 @@
 
 .category {
     font-family: "Fraunces", serif;
-    color: hsl(228, 12%, 48%);
+    color: $secundario;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 0.8rem;
@@ -36,10 +44,11 @@
     font-family: "Fraunces", serif;
     font-size: 2rem;
     line-height: 2rem;
+    color: $primario;
 }
 
 .description {
-    color: hsl(228, 12%, 48%);
+    color: $secundario;
     font-size: 0.8rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -54,21 +63,21 @@
 }
 
 .current {
-    color: hsl(158, 36%, 37%);
+    color: $destaque;
     font-size: 2rem;
     font-family: "Fraunces", serif;
 }
 
 .previous {
-    color: hsl(228, 12%, 48%);
+    color: $secundario;
     text-decoration: line-through;
 }
 
 .button {
-    background: hsl(158, 36%, 37%);
+    background: $destaque;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    color: hsl(0, 0%, 100%);
+    color: $cardbackground;
     padding: 1rem;
     border-radius: 9px;
     border: 1px solid transparent;
@@ -79,7 +88,7 @@
 }
 
 .button:hover {
-    background: hsl(158, 42%, 18%);
+    background: $hover;
 }
 
 @media screen and (max-width: 450px) {

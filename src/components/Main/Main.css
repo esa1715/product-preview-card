@@ -1,0 +1,12 @@
+main {
+  max-width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  main {
+    max-width: 90%;
+  }
+}/*# sourceMappingURL=Main.css.map */

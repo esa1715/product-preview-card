@@ -9,7 +9,7 @@ const ProductInfo = ({ cat, name, desc, cur, pre }) => {
     return(
     <div className='card__text'>
         <span className='category'>{cat}</span>
-        <h2 className='name'>{name}</h2>
+        <h1 className='name'>{name}</h1>
         <p className='description'>{desc}</p>
         <div className='price'>
             <span className='current'>{cur}</span>
