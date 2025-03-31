@@ -26,8 +26,8 @@ $hover: hsl(158, 42%, 18%);
     display: flex;
     flex-direction: column;
     background-color: $cardbackground;
-    padding: 2.5rem;
-    justify-content: space-between;
+    padding: 1.5rem;
+    justify-content: space-evenly;
     border-radius: 0 9px 9px 0;
     width: 50%;
 }
@@ -45,6 +45,7 @@ $hover: hsl(158, 42%, 18%);
     font-size: 2rem;
     line-height: 2rem;
     color: $primario;
+    width: 90%;
 }
 
 .description {
@@ -53,7 +54,7 @@ $hover: hsl(158, 42%, 18%);
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     line-height: 1.25rem;
-    width: 91%;
+    width: 84%;
 }
 
 .price {
@@ -94,6 +95,7 @@ $hover: hsl(158, 42%, 18%);
 @media screen and (max-width: 450px) {
     .Card {
         flex-direction: column;
+        height: 95vh;
     }
 
     .img__desk {
@@ -113,9 +115,14 @@ $hover: hsl(158, 42%, 18%);
     .card__text {
         width: 100%;
         border-radius: 0 0 9px 9px;
-        height: 56vh;
+        height: 100vh;
+        justify-content: space-between;
     }
 
+    .name {
+        width: 100%;
+    }
+    
     .description {
         width: 93%;
     }
